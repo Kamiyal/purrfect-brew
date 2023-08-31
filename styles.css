@@ -1,0 +1,146 @@
+body {
+    
+}
+  
+  
+  
+.menu-item {
+    padding: 5px;
+    margin: 10px auto; /* auto centers the div */
+    border-radius: 5px;
+    width: 60%;
+    border: 0.5px solid gold; /* Apply thin gold outline to menu items */
+    margin-bottom: 10px;
+}
+  
+.menu-item p {
+    margin: 0;
+    padding: 0;
+}
+
+  
+.container, h1, h2, .menu-item p {
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: .5px;
+    width: 100%;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.8s;
+}
+
+.nav-list a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+  
+.nav-list li {
+    margin: 0;
+}
+  
+.nav-list a {
+    color: rgb(0, 0, 0);
+    border-radius: 90px;
+    padding: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+  
+#entry-banner {
+    background-image: url('./images/Latte_and_dark_coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: this makes the background fixed when scrolling */
+    position: static;
+    width: 100%; /* Adjust the width of the banner */
+    opacity: 1;
+    text-align: center;
+    display: flex;  /* NEW */
+    justify-content: center;  /* NEW */
+    align-items: center;
+    height: 120vh;
+    color: white;
+}
+
+#store-description {
+    text-align: center;
+    color: white;
+    font-size: 20px;  /* Larger font size */
+    font-weight: bold;  /* Bold text */
+    text-shadow: 2px 2px 4px #000000;  /* Text shadow for readability */
+}
+
+/* Menu Item Styles*/
+.item-description {
+    font-style: italic;
+}
+#drink-menu{
+    background-color: rgba(255, 254, 254, 0.3);
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 30px; /* Add some spacing between menu sections */
+    width: 20%;  /* Adjust the width */
+    float: left; /* Float to left */
+    margin-right: 5%;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold
+}
+#food-menu{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 30px; /* Add some spacing between menu sections */
+    width: 20%;  /* Adjust the width */
+    float: left; /* Float to left */
+    margin-right: 5%;
+    margin-left: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold
+}
+#dessert-menu {
+    background-color: rgba(255, 254, 254, 0.3);
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 30px; /* Add some spacing between menu sections */
+    width: 20%;  /* Adjust the width */
+    float: left; /* Float to left */
+    margin-right: 5%;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold
+}
+
+/* Order Form Styling*/
+#order-creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: rgba(246, 245, 245, 0.6);
+    margin-top: 20%;
+}
+form {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    bor
+}
+    
+    

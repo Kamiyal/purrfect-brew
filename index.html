@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/87c0d0512af9400ba25d0e99b92aa362874b2230548d43ec9a73b1b4c6bdaa79.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Create Order</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#api-testing" id="api-test-btn">API Testing</a></li> <!-- New Button -->
+        </ul>
+    </nav>
+
+
+    <div id="entry-banner">
+        <h1>Welcome to Purrfect Brew Café!</h1>
+    </div>
+        
+    </div>
+    <div id="store-description">
+        <h2>Discover the Purrfect Brew Experience</h2>
+        <p>At Purrfect Brew Café, we're passionate about crafting exceptional coffee and providing a cozy
+            atmosphere for cat lovers to enjoy their beverages.</p>
+        <p>Visit us today and indulge in a delightful blend of flavors and feline companionship.</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="feature-box col-lg-4">                  
+                <h3 class="feature-title">Simplicity</h3>
+                <p>No-fuss, just great coffee.</p>
+            </div>
+            
+            <div class="feature-box col-lg-4">                
+                <h3 class="feature-title">Vitality</h3>
+                <p>Energize your day, every day!</p>
+            </div>
+
+            <div class="feature-box col-lg-4">        
+                <h3 class="feature-title">Unity</h3>
+                <p>Every cup directly supports your community.</p>
+            </div>
+        </div>
+    </div>
+
+        
+    <div class="container-menu">
+        <div id="drink-menu">
+            <h2>Drinks</h2>
+        </div>
+
+        <div id="food-menu">
+            <h2>Food</h2>
+        </div>
+
+        <div id="dessert-menu">
+            <h2>Desserts</h2>
+        </div>
+    </div>
+
+    <div id="container-order">
+        <div id="order-creation">
+            <h2>Create Your Order</h2>
+            <form id="order-form">
+                <label for="item-select">Choose an item:</label>
+                <select id="item-select" name="item">
+                  <!-- Options populated from JS -->
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">                
+                <input type="submit" value="Add to Order">
+              </form>              
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
