@@ -52,7 +52,7 @@
 
   
 #entry-banner {
-    background-image: url('./images/Latte_and_dark_coffee.jpg');
+    background-image: url('./images/cat-cafe.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,11 +85,13 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 75vh;
 }
 .container-fluid {
     background-color: rgba(168, 159, 145, 1);
     align-items: center;
     background-image: url('./images/beans.png');
+    background-attachment: fixed;
 }
 img {
     width: 200px; 
@@ -113,7 +115,7 @@ img {
 }
 #food-menu{
     background-color: rgba(0, 0, 0, 0.6);
-    padding-top: 7.5%; /* Add some spacing between menu sections */
+    padding-top: 30px; /* Add some spacing between menu sections */
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold
@@ -125,21 +127,4 @@ img {
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: bold
-}
-
-/* Order Form Styling*/
-#order-creation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    background-color: rgba(246, 245, 245, 0.6);
-    margin-top: 20%;
-}
-form {
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    bor
 }

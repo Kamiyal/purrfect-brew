@@ -49,21 +49,10 @@ const drinkMenu = [
   populateMenu(foodMenu, 'food-menu');
   populateMenu(dessertMenu, 'dessert-menu');
 
-  //Populate order form
 
-  const itemSelect = document.getElementById('item-select');
-
-drinkMenu.concat(foodMenu, dessertMenu).forEach(item => {
-  const option = document.createElement('option');
-  option.value = item.name;
-  option.textContent = `${item.name} - $${item.price}`;
-  itemSelect.appendChild(option);
+// Menu button auto-scroll to menu items
+document.querySelector('menu').addEventListener('click', function(event) {
+  event.preventDefault();  // Prevent default action
+  document.getElementById('drink-menu').scrollIntoView({ behavior: 'smooth' });
 });
 
-document.getElementById('order-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const selectedItem = itemSelect.value;
-  const quantity = document.getElementById('quantity').value;
-
-  // Code to add the item and quantity to the order
-});
