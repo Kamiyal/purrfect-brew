@@ -33,6 +33,7 @@ const drinkMenu = [
     { name: "Cupcake", price: 2.5, description: "Miniature cupcake in various flavors, topped with frosting."}
   ];
   
+  // FIlls out menu information
   function populateMenu(menuArray, containerID) {
     const menuDiv = document.getElementById(containerID);
     menuArray.forEach(item => {
@@ -50,7 +51,7 @@ const drinkMenu = [
   populateMenu(dessertMenu, 'dessert-menu');
 
 
-// Menu button auto-scroll to menu items
+// Menu button auto-scroll to menu items (needs to be fixed, change href to id?)
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu");
   const drinkMenu = document.getElementById("drink-menu");
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Weather info from OpenWeatherMap API expand
+// Weather API UI. (data displays, UI not finished)
 let isExpanded = true;
 
 window.addEventListener("scroll", function() {

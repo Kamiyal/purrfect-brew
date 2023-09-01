@@ -1,7 +1,7 @@
 
 .menu-item {
     padding: 5px;
-    margin: 10px auto; /* auto centers the div */
+    margin: 10px auto;
     border-radius: 5px;
     width: 60%;
     margin-bottom: 10px;
@@ -73,13 +73,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional: this makes the background fixed when scrolling */
+    background-attachment: fixed;
     position: static;
-    width: 100%; /* Adjust the width of the banner */
+    width: 100%;
     opacity: 1;
     text-align: center;
-    display: flex;  /* NEW */
-    justify-content: center;  /* NEW */
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 120vh;
     color: white;
@@ -122,22 +122,22 @@ img {
 }
 #drink-menu{
     background-color: rgba(255, 254, 254, 0.6);
-    padding-top: 30px; /*spacing between menu sections */
+    padding-top: 30px;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: bold
 }
 #food-menu{
     background-color: rgba(0, 0, 0, 0.6);
-    padding-top: 30px; /* Add some spacing between menu sections */
+    padding-top: 30px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold
 }
 #dessert-menu {
     background-color: rgba(255, 254, 254, 0.6);
-    padding-top: 30px; /* Add some spacing between menu sections */
-    float: left; /* Float to left */
+    padding-top: 30px;
+    float: left;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: bold
