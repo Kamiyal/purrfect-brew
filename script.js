@@ -51,8 +51,33 @@ const drinkMenu = [
 
 
 // Menu button auto-scroll to menu items
-document.querySelector('menu').addEventListener('click', function(event) {
-  event.preventDefault();  // Prevent default action
-  document.getElementById('drink-menu').scrollIntoView({ behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu");
+  const drinkMenu = document.getElementById("drink-menu");
+
+  menuBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    drinkMenu.scrollIntoView({ behavior: "smooth" });
+  });
 });
 
+// Weather info from OpenWeatherMap API expand
+let isExpanded = true;
+
+window.addEventListener("scroll", function() {
+  if (isExpanded) {
+    this.document.getElementById("weather").style.width = "100px";
+    this.document.getElementById("weather").style.height = "50px";
+    this.document.getElementById("weather").innerText = "Less Info";
+    isExpanded = false;
+  }
+});
+
+document.getElementById("weather").addEventListener("hover", function() {
+  if (!isExpanded) {
+    this.style.width = "300px";
+    this.style.height = "150px";
+    this.innerText = "More Info";
+    isExpanded = true;
+  }
+})
